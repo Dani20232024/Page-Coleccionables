@@ -80,7 +80,6 @@ a {
 
 .cart.active {
     right: 0;
-    background-color: white;
 }
 
 .cart-title {
@@ -94,18 +93,39 @@ a {
 }
 
 .cart-box {
-display: grid;
-grid-template-columns: 32% 50% 18%;
-align-items: center;
-gap: 1rem;
-margin-top: 1rem;
+   display: grid;
+   grid-template-columns: 32% 50% 18%;
+   align-items: center;
+   gap: 1rem;
+   margin-top: 1rem;
 }
+
+
 
 .cart-img {
     width: 100px;
     height: 100px;
     object-fit: contain;
     padding: 10px;
+}
+
+
+.float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    background-color: #25d366;
+    bottom: 40px;
+    right: 30px;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    z-index: 999;
+}
+
+.fa-whatsapp {
+    font-size: 54px;
+    margin-top: 2px;
 }
 
 
@@ -205,7 +225,11 @@ margin-top: 1rem;
     position: relative;
     border-style: solid ;
     border-radius: 10px;
+}
 
+.product-box:hover {
+    transform: scale(1.03);
+    transition: all 1s ease;    
 }
 
 
@@ -360,5 +384,69 @@ h2 {
 span {
     font-family: 'Bebas Neue', sans-serif;
 
+}
+
+footer {
+    height: 21%;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+}
+
+
+
+footer h1 {
+    color: white;
+    font-family: oswald;
+    margin-left: 117px;
+    margin-top: 15px;
+    
+}
+
+.fa-instagram {
+    font-size: 24px;
+}
+
+.fa-instagram:hover {
+    color: orange;
+}
+
+.rating {
+    display: inline-block;
+    margin-left: 1034px;
+  }
+  
+  .rating input {
+    display: none;
+  }
+  
+  .rating label {
+    float: right;
+    cursor: pointer;
+    color: #ccc;
+    transition: color 0.3s;
+  }
+  
+  .rating label:before {
+    content: '\2605';
+    font-size: 30px;
+  }
+  
+  .rating input:checked ~ label,
+  .rating label:hover,
+  .rating label:hover ~ label {
+    color: gold;
+    transition: color 0.3s;
+  }
+
+.calification {
+    margin-left: 1035px;
+    margin-top: -48px;
+    font-family: oswald;
+}
+
+.contenedor {
+    position: relative;
+   
 }
 
